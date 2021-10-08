@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:fooderlich/screens/splash_screen.dart';
 import 'package:provider/provider.dart';
 
 import 'fooderlich_theme.dart';
-import 'home.dart';
+import 'screens/home.dart';
 import 'models/models.dart';
 
 void main() {
@@ -26,7 +27,7 @@ class Fooderlich extends StatelessWidget {
             create: (context) => GroceryManager(),
           ),
         ],
-        child: const Home(),
+        child: const SplashScreen(),
       ),
     );
   }
