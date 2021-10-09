@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../components/grocery_tile.dart';
 import '../models/models.dart';
-import 'grocery_item_screen.dart';
 
 class GroceryListScreen extends StatelessWidget {
   final GroceryManager manager;
@@ -20,8 +19,6 @@ class GroceryListScreen extends StatelessWidget {
         itemCount: groceryItems.length,
         itemBuilder: (context, index) {
           final item = groceryItems[index];
-          // TODO 28: Wrap in a Dismissable
-
           return Dismissible(
             key: Key(item.id),
             direction: DismissDirection.endToStart,
@@ -55,19 +52,7 @@ class GroceryListScreen extends StatelessWidget {
                 },
               ),
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => GroceryItemScreen(
-                      originalItem: item,
-                      onUpdate: (item) {
-                        manager.updateItem(item, index);
-                        Navigator.pop(context);
-                      },
-                      onCreate: (item) {},
-                    ),
-                  ),
-                );
+                manager.groceryItemTapped(index);
               },
             ),
           );
