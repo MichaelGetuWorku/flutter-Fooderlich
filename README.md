@@ -5,7 +5,7 @@ A grocery and recipe application project.
 ## Getting Started
 
 Project Demo
-<img src="./fooderlich.gif" alt="My Project GIF" width="500" height="600">
+<img src="./fooderlich.gif" alt="My Project GIF" width="600" height="700">
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
