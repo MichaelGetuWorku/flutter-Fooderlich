@@ -104,7 +104,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
       children: [
         CircleImage(
           imageProvider: AssetImage(widget.user.profileImageUrl),
-          imageRadius: 60.0,
+          imageRadius: 80.0,
         ),
         const SizedBox(height: 16.0),
         Text(
